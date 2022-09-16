@@ -19,7 +19,7 @@ describe Solver do
 
   describe '.reverse' do
     it 'Should return the reverse of a string' do
-      expect(@solve.reverse('hello')).to eql 'elloh'
+      expect(@solve.reverse('hello')).to eql 'olleh'
     end
   end
 
