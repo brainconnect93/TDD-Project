@@ -17,9 +17,15 @@ describe Solver do
     end
   end
 
+  describe '.factorial' do
+    it 'Should raise error' do
+      expect { @name.correct_name }.to raise_error(Exception)
+    end
+  end
+
   describe '.reverse' do
     it 'Should return the reverse of a string' do
-      expect(@solve.reverse('hello')).to eql 'elloh'
+      expect(@solve.reverse('hello')).to eql 'olleh'
     end
   end
 
@@ -34,6 +40,10 @@ describe Solver do
 
     it 'Should return fizzbuzz' do
       expect(@solve.fizzbuzz(15)).to eql 'fizzbuzz'
+    end
+
+    it 'Should return 7' do
+      expect(@solve.fizzbuzz(7)).to eql '7'
     end
   end
 end
