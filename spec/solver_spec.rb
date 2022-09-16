@@ -25,7 +25,15 @@ describe Solver do
 
   describe '.fizzbuzz' do
     it 'Should return fizz' do
-      expect(@solve.fizzbuzz(25)).to eql 'fizz'
+      expect(@solve.fizzbuzz(9)).to eql 'fizz'
+    end
+
+    it 'Should return buzz' do
+      expect(@solve.fizzbuzz(25)).to eql 'buzz'
+    end
+
+    it 'Should return fizzbuzz' do
+      expect(@solve.fizzbuzz(15)).to eql 'fizzbuzz'
     end
   end
 end
