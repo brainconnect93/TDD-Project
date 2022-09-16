@@ -1,4 +1,4 @@
-require '../solver'
+require './solver'
 
 describe Solver do
   before :each do
