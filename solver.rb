@@ -2,7 +2,7 @@
 class Solver
   def factorial(n, result = 1)
     return result if n == 0
-    raise 'Only positive integers please' if n < 0
+    raise Exception if n < 0
     result *= n
     factorial(n - 1, result)
   end
@@ -23,7 +23,7 @@ class Solver
     elsif (n % 5) == 0
       'buzz'
     else
-      ''
+      "#{n}"
     end
   end
 end
