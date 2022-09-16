@@ -1,10 +1,10 @@
 # Solver class
 class Solver
-  def factorial(n, result = 1)
-    return result if n == 0
-    raise Exception if n < 0
-    result *= n
-    factorial(n - 1, result)
+  def factorial(num, result = 1)
+    return result if num == 0
+    raise Exception if num < 0
+    result *= num
+    factorial(num - 1, result)
   end
 
   def reverse(str)
@@ -15,15 +15,15 @@ class Solver
     rev
   end
 
-  def fizzbuzz(n)
-    if (n % 3) == 0 && (n % 5) == 0
+  def fizzbuzz(num)
+    if (num % 3) == 0 && (num % 5) == 0
       'fizzbuzz'
-    elsif (n % 3) == 0
+    elsif (num % 3) == 0
       'fizz'
-    elsif (n % 5) == 0
+    elsif (num % 5) == 0
       'buzz'
     else
-      "#{n}"
+      "#{num}"
     end
   end
 end
