@@ -17,5 +17,15 @@ describe Solver do
     end
   end
 
-  
+  describe '.reverse' do
+    it 'Should return the reverse of a string' do
+      expect(@solve.reverse('hello')).to eql 'elloh'
+    end
+  end
+
+  describe '.fizzbuzz' do
+    it 'Should return fizz' do
+      expect(@solve.fizzbuzz(25)).to eql 'fizz'
+    end
+  end
 end
