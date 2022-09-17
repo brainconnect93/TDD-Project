@@ -28,26 +28,36 @@ To get a local copy up and running follow these simple example steps.
 - With git, clone the code to your machine, or download a ZIP of all the files directly.
 - Download the ZIP file from this location or run the following git command to clone the files to your machine:
 
-> git clone https://github.com/brainconnect93/TDD-Project.git
+``` 
+
+git clone https://github.com/brainconnect93/TDD-Project.git
+
+```
 
 ### Install
 
 - After opening the files in Visual Studio Code, open the VS Code integrated terminal and run the following commands:
 
-> bundle init
-> bundle install
+```
+bundle init
+bundle install
+```
 
 ### Usage
 
 - Run the command in your terminal below to run the ruby program
 
->  ruby main.rd to run
+```
+ruby main.rd to run
+```
 
 ### Run tests
 
 - Run the command in your terminalbelow for linter checks
 
-> rubocop
+```
+rubocop
+```
 
 
 ## Authors
